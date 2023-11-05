@@ -28,3 +28,8 @@ Si deseas renombrar la tabla puedes hacerlo de la siguiente manera
 ```sql
 RENAME TABLE animales to animal 
 ```
+
+Para eliminar una tabla
+```sql
+DROP TABLE usuarios;
+```
