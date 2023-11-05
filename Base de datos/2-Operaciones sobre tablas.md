@@ -12,14 +12,22 @@ Empecemos por la selección más básica, la tabla completa
 SELECT * FROM animales
 ```
 
-Este comando va a devolver todos los animales de la tabla. Ahora si queremos hacer un filtrado se debe de poner un **where
+Este comando va a devolver todos los animales de la tabla. Ahora si queremos hacer un filtrado se debe de poner un **where**
 
 ```sql
 SELECT * FROM animales WHERE estado = 'feliz'
 ```
 
-Se pueden añadir operadores lógicos al **where 
+Se pueden añadir operadores lógicos al **where** 
 
 ```sql
 SELECT * FROM animales WHERE estado = 'feliz' AND tipo = 'perro'
 ```
+
+## Actualizar 
+Para actualizar un valor en una tabla se procede de la siguiente manera
+
+```sql
+UPDATE animales SET estado = 'feliz' WHERE id = 2
+```
+
