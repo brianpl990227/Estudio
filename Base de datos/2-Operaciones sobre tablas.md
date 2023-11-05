@@ -5,6 +5,13 @@ Para insertar información en una tabla primero se debe de seleccionar la tabla 
 INSERT INTO animales (tipo, estado) VALUES ('gato', 'furioso')
 ```
 
+Tambien se pueden insertar varias filas a la vez
+
+```sql
+INSERT INTO animales (tipo, estado) 
+VALUES 
+	('gato', 'furioso'), ('perro', 'feliz'), ('dragon', 'triste')
+```
 ## Leer tabla
 Empecemos por la selección más básica, la tabla completa
 

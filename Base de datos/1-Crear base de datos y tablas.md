@@ -24,3 +24,7 @@ Como ya hasta ahí se tiene creada la tabla el id tiene que ser auto incremental
 ALTER TABLE animales MODIFY COLUMN id int auto_incremental; 
 ```
 
+Si deseas renombrar la tabla puedes hacerlo de la siguiente manera
+```sql
+RENAME TABLE animales to animal 
+```
