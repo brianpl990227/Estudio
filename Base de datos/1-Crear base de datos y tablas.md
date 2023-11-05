@@ -16,9 +16,10 @@ CREATE TABLE animales(
 	estado varchar(255)
 	PRIMARY KEY (id)
 );
+-- Esto es un comentario
 ```
 
-Como ya hasta ahí se tiene creada la tabla el id tiene que ser auto incremental. Eso se hace con la siguiente instruccion
+Como ya hasta ahí se tiene creada la tabla el id tiene que ser auto incremental. Eso se hace con la siguiente instrucción
 ```sql
 ALTER TABLE animales MODIFY COLUMN id int auto_incremental; 
 ```
