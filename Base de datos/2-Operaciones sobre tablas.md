@@ -24,6 +24,37 @@ Se pueden añadir operadores lógicos al **where**
 SELECT * FROM animales WHERE estado = 'feliz' AND tipo = 'perro'
 ```
 
+```sql
+-- Revisa en la columna email si está la cadena gmail sin importar inicio ni final
+SELECT * FROM usuarios WHERE email LIKE '%gmail%'
+```
+
+```sql
+-- Revisa en la columna email si está la cadena gmail al final
+SELECT * FROM usuarios WHERE email LIKE '%gmail'
+```
+
+```sql
+-- Revisa en la columna email si está la cadena gmail al principio
+SELECT * FROM usuarios WHERE email LIKE 'gmail%'
+```
+
+```sql
+-- ordena ascendentemente, para decendente es DESC
+SELECT * FROM usuarios ORDER BY edad ASC
+```
+
+```sql
+-- Obtiene el usuario de mayor edad, min(edad) para el de menor
+-- mayor es el nombre de la columna de la respuesta
+SELECT max(edad) as mayor FROM usuarios 
+```
+
+```sql
+-- Escoge solamente los datos que me interesan de la tabla de usuarios
+-- Se puede cambiar el nombre de la columna con as
+SELECT name as nombre, email FROM usuarios 
+```
 ## Actualizar 
 Para actualizar un valor en una tabla se procede de la siguiente manera
 
