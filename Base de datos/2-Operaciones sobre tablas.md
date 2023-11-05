@@ -28,6 +28,14 @@ SELECT * FROM animales WHERE estado = 'feliz' AND tipo = 'perro'
 Para actualizar un valor en una tabla se procede de la siguiente manera
 
 ```sql
-UPDATE animales SET estado = 'feliz' WHERE id = 2
+UPDATE animales SET estado = 'feliz', tipo = 'Lagarto' WHERE id = 2
 ```
 
+## Eliminar
+Es importante a la hora de eliminar especificar el **where** de lo contrario se elimina la tabla completa
+```sql
+DELETE animales WHERE id = 3
+```
+
+### Nota
+En las últimas versiones de MySQL se fuerza a que en el where de debe de poner un ID, esto se puede desactivar.
